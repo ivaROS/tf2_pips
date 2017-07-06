@@ -45,6 +45,7 @@ inline
 
 // this method needs to be implemented by client library developers
 template <>
+inline
   void doTransform(const pips_trajectory_msgs::trajectory_points& t_in, pips_trajectory_msgs::trajectory_points& t_out, const geometry_msgs::TransformStamped& transform_stamped)
   {
     
@@ -81,6 +82,7 @@ inline
 
 // this method needs to be implemented by client library developers
 template <>
+inline
   void doTransform(const pips_trajectory_msgs::trajectory_pointsPtr& t_in, pips_trajectory_msgs::trajectory_pointsPtr& t_out, const geometry_msgs::TransformStamped& transform_stamped)
   {
     doTransform(*t_in,*t_out,transform_stamped);
