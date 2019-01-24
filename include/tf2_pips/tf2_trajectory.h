@@ -62,7 +62,7 @@ inline
     }
     
     
-    t_out.header.stamp = t_in.header.stamp; //tf2 examples use the transform's stamp...
+    t_out.header.stamp = transform_stamped.header.stamp;
     t_out.header.frame_id = transform_stamped.header.frame_id;
   }
 
